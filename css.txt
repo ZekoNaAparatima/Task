@@ -1,0 +1,16 @@
+.slider-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 calc(100% / var(--visible-slides)); 
+  
+}
+
+

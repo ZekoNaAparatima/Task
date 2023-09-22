@@ -1,0 +1,26 @@
+const slider = document.querySelector('.slider');
+const slides = document.querySelectorAll('.slide');
+
+let currentIndex = 0;
+const visibleSlidesMobile = 1; 
+
+function goToSlide(index) {
+  if (index < 0) {
+    index = slides.length - 1;
+  } else if (index >= slides.length) {
+    index = 0;
+  }
+
+  currentIndex = index;
+  const translateX = -currentIndex * 100 + '%'; 
+  slider.style.transform = `translateX(${translateX})`;
+}
+
+
+
+window.addEventListener('resize', () => {
+  const newIndex = Math.min(currentIndex, slides.length - 1);
+  goToSlide(newIndex);
+});
+
+goToSlide(currentIndex);

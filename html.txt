@@ -1,0 +1,12 @@
+<div class="slider-container">
+  <div class="slider">
+    <div class="slide">
+      <img src="1695291108234.png" alt="Slide 1">
+    </div>
+    <div class="slide">
+      <img src="1695291108234.png" alt="Slide 2">
+    </div>
+
+  </div>
+  
+</div>
